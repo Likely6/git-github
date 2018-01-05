@@ -1,14 +1,14 @@
 ###git常用命令
-git config --list ^^查看配置列表
-git config --global user.name 'username'  ^^配置用户名和邮箱
+git config --list 查看配置列表
+git config --global user.name 'username'  配置用户名和邮箱
 git config --global user.email 'youremail@qq.com'
-git init  ^^初始化仓库（此时目录下会多出一个.git目录，是用来跟踪版管理本库的  用ls -ah来查看）
-git add readme.txt  ^^添加文件到版本库的暂存区
-git commit -m '添加readme.txt文件'  ^^将缓存区文件提交到当前分支
-git status  ^^查看仓库状态
-git diff readme.txt ^^查看具体修改情况
-git log ^^显示提交日志（git log --pretty=oneline  可以一行显示免得显示太乱）
-git reset --hard HEAD^  ^^回退到上一个版本（HEAD表示当前版本 HEAD^表示上一个版本 HEAD^^表示上上个版本以此类推  也可以HEAD~10表示回退多山版本）
+git init  初始化仓库（此时目录下会多出一个.git目录，是用来跟踪版管理本库的  用ls -ah来查看）
+git add readme.txt  添加文件到版本库的暂存区
+git commit -m '添加readme.txt文件'  将缓存区文件提交到当前分支
+git status  查看仓库状态
+git diff readme.txt 查看具体修改情况
+git log 显示提交日志（git log --pretty=oneline  可以一行显示免得显示太乱）
+git reset --hard HEAD^  回退到上一个版本（HEAD表示当前版本 HEAD^表示上一个版本 HEAD^^表示上上个版本以此类推  也可以HEAD~10表示回退多山版本）
 git reset --hard b87431a   ^^指定版本号回退（不需要写全版本号）
 git reflog  ^^查看你的每一条命令
 git checkout -- readme.txt  ^^丢弃工作区readme.txt的修改 其实是用版本库里的最新版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”   
